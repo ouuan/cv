@@ -1,5 +1,5 @@
-cv.pdf: cv.typ
-	typst compile cv.typ
+cv.pdf: cv.typ template.typ
+	typst compile $<
 
 clean:
 	rm -f cv.pdf
