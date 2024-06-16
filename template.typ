@@ -95,10 +95,7 @@
       #h(1fr)
       #text(weight: "thin", emph(research.date))
 
-      #for point in research.points.map(x => "[" + x + "]") {
-        list(eval(point))
-      }
-
+      #list(..research.points)
       #v(0.2em)
     ]
   }
@@ -124,9 +121,7 @@
         v(-0.4em)
       }
 
-      #for point in project.points.map(x => "[" + x + "]")  {
-        list(eval(point))
-      }
+      #list(..project.points)
       #v(0.2em)
     ]
   }
