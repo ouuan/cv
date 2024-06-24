@@ -33,8 +33,8 @@
 
 #let cv(name: "", email: "", birthday: "", github-id: "", body) = {
   set document(title: name + " 简历")
-  set page(paper: "a4", margin: (x: 1.6cm, y: 1.6cm))
-  set text(font: "Noto Serif CJK SC", 0.95em);
+  set page(paper: "a4", margin: (x: 1.5cm, y: 1.5cm))
+  set text(font: ("Palatino Linotype", "Noto Serif CJK SC"), 0.92em);
   set par(justify: true, linebreaks: "optimized")
 
   [

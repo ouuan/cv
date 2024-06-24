@@ -12,7 +12,7 @@
     school: [#box(image("./logos/tsinghua.svg"), height: 1.1em, baseline: 0.19em) 清华大学 致理书院],
     major: "信息与计算科学",
     degree: "本科",
-    date: "2021.8 —— 2025.6（预期）",
+    date: "2021.8 — 2025.6（预期）",
   ),
 ))
 
@@ -20,7 +20,7 @@
   (
     name: "ZIP 文件格式解析歧义安全问题",
     supervisor: "陈建军",
-    date: "2023.10 —— 至今",
+    date: "2023.10 — 至今",
     points: (
       "调研学习了解析歧义安全问题、差分模糊测试的相关研究工作",
       "测试发现了不同 ZIP 文件解析器（解压软件）之间的大量解析歧义问题",
@@ -32,7 +32,7 @@
   (
     name: "基于代码属性图的PHP程序污点型漏洞挖掘",
     supervisor: "陈建军",
-    date: "2023.7 —— 2023.9",
+    date: "2023.7 — 2023.9",
     points: (
       "使用基于代码属性图的PHP代码静态分析方法，对一些开源项目进行漏洞挖掘",
       "对现有漏洞挖掘工具进行了优化和修复，提升了工具的易用性、效率和准确性",
@@ -79,7 +79,7 @@
     name: "操作系统内存管理组件的形式化验证",
     course: "操作系统",
     role: "单人项目",
-    date: "2024.4 —— 2024.6",
+    date: "2024.4 — 2024.6",
     tech: "Verus / Rust, OS",
     points: (
       "学习了解现有的 OS 形式化验证相关工作，尤其是学习了 Verus 的使用",
@@ -89,8 +89,8 @@
   (
     name: "IPv6 硬件路由器",
     course: "计算机网络原理 & 计算机组成原理",
-    role: "三人合作 (队长)",
-    date: "2023.10 —— 2024.1",
+    role: "三人合作（队长）",
+    date: "2023.10 — 2024.1",
     tech: "SystemVerilog / C, Networking / RISC-V CPU",
     points: (
       "在 FPGA 开发板上实现 IPv6 硬件路由器，支持四口 1Gbps 线速转发，并能存下全网路由表（约 20 万条表项）",
@@ -103,7 +103,7 @@
     name: "Chrome 小恐龙体感游戏",
     course: "数字逻辑设计",
     role: "两人合作",
-    date: "2023.4 —— 2023.6",
+    date: "2023.4 — 2023.6",
     tech: "SystemVerilog",
     points: (
       "使用硬件描述语言在 FPGA 开发板上实现 Chrome 小恐龙体感游戏",
@@ -115,7 +115,7 @@
     name: "GIF 图片搜索网站",
     course: "软件工程",
     role: "五人合作 (队长)",
-    date: "2023.3 —— 2023.5",
+    date: "2023.3 — 2023.5",
     tech: "Nuxt (Vue / TypeScript) / Python (Django / Flask) / Docker",
     points: (
       "具有图片上传管理、搜索查看、AI 处理等功能，以及订阅、点赞、评论、私信等社交功能",
@@ -129,7 +129,7 @@
     name: "Wordle 游戏 & 在线评测系统",
     course: "程序设计训练",
     role: "单人项目",
-    date: "2022.8 —— 2022.9",
+    date: "2022.8 — 2022.9",
     tech: "Rust (egui / Actix) / Vue",
     points: (
       "Wordle 游戏：包括命令行 CLI 界面和原生 GUI 界面（使用 egui 框架），以及基于信息熵算法的自动求解器",
