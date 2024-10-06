@@ -2,7 +2,7 @@
 
 #show: cv.with(
   name: "游宇凡",
-  email: "youyf21@mails.tsinghua.edu.cn",
+  email: "ouuansteve@gmail.com",
   birthday: "2003.1.26",
   github-id: "ouuan",
 )
@@ -22,9 +22,9 @@
     supervisor: "陈建军",
     date: "2023.10 — 至今",
     points: (
-      "测试发现了不同 ZIP 文件解析器（解压软件）之间的大量解析歧义问题",
-      "发现了绕过杀毒软件、邮件安全网关检测，绕过扩展市场发布者 ID 认证，造成 Office 文档显示差异绕过审核机制，伪造 Office 文档签名等多个不同场景下的安全漏洞",
-      "上报漏洞后已得到 Gmail、Coremail、Go 等厂商的确认，获得了漏洞赏金和 CVE 编号",
+      "通过黑盒模糊测试发现了不同 ZIP 文件解析器（解压软件）之间的大量解析歧义问题",
+      "发现了绕过杀毒软件、邮件安全网关检测，造成 Office 文档显示差异绕过审核机制、查重检测，伪造 Office 文档签名，伪造 JAR 文件签名，冒用编辑器扩展 ID 等多个不同场景下的安全漏洞",
+      "上报漏洞后已得到 Gmail、Coremail、Go、LibreOffice、Spring Boot 等厂商的确认修复、漏洞赏金和 CVE 编号",
       "研究成果预计将以一作身份发表论文",
     ),
   ),
@@ -65,19 +65,30 @@
   icon: "./icons/graduation-cap.svg",
 )
 
-- 计算机专业课 GPA 3.96 / 4.0，其中 8 门课程获得 A+。参与了大量课程项目，在实践中学习巩固了安全、网络、系统、数字逻辑、软件工程等各领域的专业知识，并培养了出色的工程开发和团队协作能力。
+- 计算机专业课 GPA 3.96 / 4.0，其中 8 门课程获得 A+。参与了大量课程项目，在实践中巩固了安全、网络、系统、数字逻辑、软件工程等各领域的专业知识，并培养了出色的学习运用新知识、解决实际问题、参与团队协作的能力。
 
 - 修读了数学分析、高等线性代数、抽象代数、概率论、常微分方程、拓扑学等为数学专业开设的高难度数学课。
 
 - 计算机专业课成绩如下：
   #grid(
-    columns: (auto, 1fr, auto, 1fr),
+    columns: (auto, 1fr, auto, 1fr, auto, 1fr, auto, 1fr),
     column-gutter: 1em,
     row-gutter: 0.8em,
     ..courses,
   )
 
 #course-projects((
+  (
+    name: "勒索软件的分析与破解",
+    course: "专业实践",
+    role: "360公司优秀实习生",
+    date: "2024.7",
+    tech: "逆向分析 (IDA) / 密码学 / GPT (pytorch)",
+    points: (
+      [对 Conti 和 DoNex 勒索软件样本的行为进行了逆向分析],
+      [针对 DoNex 中加密时存在的重用密钥流漏洞，编写了解密工具，参考论文 _A natural language approach to automated cryptanalysis of two-time pads_ 的思路，将其中使用的 n-gram language model 替换为 GPT，基于文件的未加密部分训练小型 GPT 模型，然后基于模型输出运行 Viterbi 算法推测密钥，能够以较高的效率正确破解整个密钥流],
+    ),
+  ),
   (
     name: "路由器安全漏洞验证",
     course: "网络空间安全导论",
@@ -154,14 +165,19 @@
 
 #awards((
   (
+    name: "2024年全国大学生计算机系统能力大赛-操作系统设计赛(全国)-OS功能挑战赛道",
+    prize: "二等奖（团体）",
+    date: "2024.8",
+  ),
+  (
+    name: "2022-2023 学年度致理书院科技创新优秀奖学金",
+    prize: "",
+    date: "2023.12",
+  ),
+  (
     name: "清华大学第七届网络安全技术挑战赛 (THUCTF2023)",
     prize: "特等奖",
     date: "2023.10",
-  ),
-  (
-    name: "致理书院科技创新优秀奖学金",
-    prize: "",
-    date: "2022-2023 学年度",
   ),
   (
     name: "清华大学第二十六届智能体大赛",
@@ -177,12 +193,12 @@
 
 // TODO: all numbers here need to be updated continuously
 #open-source(
-  [在 GitHub 上维护了若干项目，并参与贡献了大量项目，历史总计 PR 669 个，issue 442 个，并在科研、学习内外上报了若干安全漏洞，总计获得 11 个 CVE。部分项目如下所示：],
+  [在 GitHub 上维护了若干项目，并参与贡献了大量项目，历史总计 PR 674 个，issue 445 个，并在科研、学习内外上报了若干安全漏洞，总计获得 15 个 CVE。部分项目如下所示：],
   (
     (
       name: "Codle",
       repo: "ouuan/codle",
-      star: "48",
+      star: "49",
       role: "个人项目",
       date: "2022.3 起",
       tech: "Vue / TypeScript",
@@ -191,8 +207,8 @@
     (
       name: "CP Editor",
       repo: "cpeditor/cpeditor",
-      star: "1.7k",
-      role: "首席维护者",
+      star: "1.8k",
+      role: "主要维护者",
       date: "2019.12 起",
       tech: "C++ / Qt",
       desc: "为算法竞赛设计的代码编辑器，核心功能包括从网站获取测例、编译代码、运行检查测例、提交代码等",
@@ -200,7 +216,7 @@
     (
       name: "OI Wiki",
       repo: "OI-wiki/OI-wiki",
-      star: "19.3k",
+      star: "20.8k",
       role: "核心贡献者",
       date: "2019.3 起",
       tech: "",
@@ -213,9 +229,9 @@
   (
     name: "编程语言",
     items: (
+      "Rust",
       "C++",
       "C",
-      "Rust",
       "TypeScript",
       "Vue",
       "Python",
@@ -224,6 +240,7 @@
       "x86",
       "RISC-V",
       "MATLAB",
+      "……",
     ),
   ),
   (
